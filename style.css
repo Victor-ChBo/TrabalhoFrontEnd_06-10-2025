@@ -5,13 +5,13 @@
   --cor-destaque: #00be4f;
   --cor-borda-sutil: #dee2e6;
   --cor-fundo-caixa: #ffffff;
-}
+} /*Define cores básicas que serão utilizadas no site*/
 
 * { box-sizing: border-box;
  }
 
  html { font-size: 100%;
-}
+} /*Define o tamanho da fonte*/
 
 body {
   margin: 0;
@@ -19,20 +19,55 @@ body {
   line-height: 1.7;
   color: var(--cor-texto);
   background: var(--cor-fundo);
-}
+} /*Define principais características do corpo do site, como espaçamento entre o texto e a borda,
+fonte, distância vertical entre as linhas e cores*/
 
-.caixa{
+p{
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
+} /*Adiciona uma leve sombra abaixo do elemento*/
 
-a { color: var(--cor-texto); text-decoration: none; font-weight: 500; 
-}
+
+/*!!!!! detalhe pare links clicáveis (elementos de classe 'a'): não sei como fazer o efeito que o site do ge tem quando bota o mouse
+em cima dos links clicáveis no topo da página, resolvo isso depois*/
+
+a { color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 500; 
+} /*muda a cor e retira a linha padrão em baixo de links*/
+
 a:hover {
     background-color: #e6e6e6;
     border-radius: 4px;
-}
+}/*Adiciona um destaque para elementos clicáveis quando o cursos está em cima*/
+
 a:focus {
   outline: 2px solid var(--cor-destaque);
   outline-offset: 2px;
   border-radius: 4px;
+} /*?????? não sei o que faz (encontrar função e especificar ou excluir caso não faça diferença*/
+
+section{
+    display: flex; /*cria uma flexbox, ou seja, ficam flexíveis*/
+    text-align: center;
+    margin: 0.7rem;
+    justify-content: space-between;
+}/*deixa o espaçamento igual entre todos os elementos dentro da section*/
+
+header{
+    background-color: #00be4f;
+    color: var(--cor-fundo-caixa);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*!!!!!! achar fonte boa para colocar aqui*/
+} /*define cor de fundo e texto, fonte e espaçamento (adicionar espaçamento!!!!!)*/
+
+.globo{
+    color: rgb(40, 40, 255);
+}
+
+.g1{
+    color: rgb(185, 0, 0);
+}
+
+.ge{
+    color: var(--cor-destaque);
 }
