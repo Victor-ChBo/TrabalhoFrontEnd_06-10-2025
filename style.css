@@ -14,18 +14,13 @@
 } /*Define o tamanho da fonte*/
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.7;
-  color: var(--cor-texto);
+  margin: 0;
+  color: var(--cor-texto-secundario);
   background: var(--cor-fundo);
 } /*Define principais características do corpo do site, como espaçamento entre o texto e a borda,
 fonte, distância vertical entre as linhas e cores*/
-
-p{
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-} /*Adiciona uma leve sombra abaixo do elemento*/
-
 
 /*!!!!! detalhe pare links clicáveis (elementos de classe 'a'): não sei como fazer o efeito que o site do ge tem quando bota o mouse
 em cima dos links clicáveis no topo da página, resolvo isso depois*/
@@ -49,8 +44,8 @@ a:focus {
 section{
     display: flex; /*cria uma flexbox, ou seja, ficam flexíveis*/
     text-align: center;
-    margin: 0.7rem;
     justify-content: space-between;
+    margin: 1rem;
 }/*deixa o espaçamento igual entre todos os elementos dentro da section*/
 
 header{
@@ -70,4 +65,60 @@ header{
 
 .ge{
     color: var(--cor-destaque);
+}
+
+.gshow{
+    color: rgb(222, 145, 0);
+}
+
+.globoplay{
+    color: red;
+}
+
+.cartola{
+    color: rgb(228, 102, 0);
+}/*cores*/
+
+.titulo_principal{
+    color: #00be4f;
+    font-size: 1.5rem;
+    margin: 1rem;
+}/*muda cor, tamanho e margem desta classe*/
+
+footer{
+    color: var(--cor-texto-secundario);
+    font-size: 0.8rem;
+    margin: 1rem;
+}/*muda cor e tamanho da fonte da classe*/
+
+p{
+    color: #00be4f;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem;
+}/*muda estilo, tamanho e cor para textos*/
+
+img{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 0rem;
+}/*Muda o tamanho e ajusta a imagem na tela*/
+
+hr{
+    margin: 1rem;
+    color: #6c757d;
+}
+
+div{
+    text-align: justify;
+    background-color: var(--cor-branca);
+    margin-bottom: 0;
+}
+
+.separador {
+    background-color: #cfcfcf;
+    height: 8px;
+    width: 100%;
+    box-shadow: #6c757d;
 }
