@@ -1,0 +1,495 @@
+:root {
+  --cor-fundo: #f8f9fa;
+  --cor-texto: #212529;
+  --cor-texto-secundario: #6c757d;
+  --cor-destaque: #06AA48;
+  --cor-borda-sutil: #dee2e6;
+  --cor-fundo-caixa: #ffffff;
+} /*Define cores básicas que serão utilizadas no site*/
+
+.icone-conta-globo{
+/* Remova ou comente o "display: none;" que você já tinha aqui, se ele estiver atrapalhando */
+ display: none; /* Garante que a imagem está invisível por padrão */
+}
+
+* { box-sizing: border-box;
+ }
+
+ html { font-size: 100%;
+} /*Define o tamanho da fonte*/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--cor-texto-secundario);
+  background: var(--cor-fundo);
+} /*Define principais características do corpo do site, como espaçamento entre o texto e a borda,
+fonte, distância vertical entre as linhas e cores*/
+
+a { color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 500; 
+} /*muda a cor e retira a linha padrão em baixo de links*/
+
+a:hover {
+    background-color: #e6e6e6;
+    border-radius: 4px;
+}/*Adiciona um destaque para elementos clicáveis quando o cursos está em cima*/
+
+a:focus {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+section{
+    display: flex; /*cria uma flexbox, ou seja, ficam flexíveis*/
+    text-align: center;
+    justify-content: space-between;
+    margin: 1rem;
+}/*deixa o espaçamento igual entre todos os elementos dentro da section*/
+
+header{
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo-caixa);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+} /*define cor de fundo e texto, fonte e espaçamento*/
+
+.globo{
+    color: rgb(40, 40, 255);
+}
+
+.g1{
+    color: rgb(185, 0, 0);
+}
+
+.ge{
+    color: var(--cor-destaque);
+}
+
+.gshow{
+    color: rgb(222, 145, 0);
+}
+
+.globoplay{
+    color: red;
+}
+
+.cartola{
+    color: rgb(228, 102, 0);
+}/*cores dos links acima*/
+
+h3{
+    color:var(--cor-destaque);
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.titulo_principal{
+    color:var(--cor-destaque);
+    font-size: 1.5rem;
+    margin: 1rem;
+}/*muda cor, tamanho e margem desta classe*/
+
+.noticiasecundaria{
+    color:var(--cor-destaque);
+    font-size: 1.5rem;
+    margin: 1rem;
+}/*muda cor, tamanho e margem desta classe*/
+
+footer{
+    color: var(--cor-texto-secundario);
+    font-size: 0.8rem;
+    margin: 1rem;
+}/*muda cor e tamanho da fonte da classe*/
+
+p{
+    color: var(--cor-destaque);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem;
+}/*muda estilo, tamanho e cor para textos*/
+
+img{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 0rem;
+}/*Muda o tamanho e ajusta a imagem na tela*/
+
+hr{
+    margin: 1rem;
+    color: #6c757d;
+}/*adiciona linha horizioontal cinza presente no site real*/
+
+div{
+    text-align: justify;
+    background-color: var(--cor-branca);
+    margin-bottom: 0px;
+}
+
+.separador {
+    background-color: #cfcfcf;
+    height: 8px;
+    width: 100%;
+    box-shadow: #6c757d;
+}/*adiciona área cinza entre as matérias na versão mobile first*/
+
+.cabecalio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}/*ajusta posição dos itens*/
+
+.centro {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 10px;
+}/*centraliza o item "centro" que está dentro de "cabeçalio"*/
+
+.cemanos {
+  height: auto;
+  width: 8rem;
+}/*ajusta tamanho da imagem de 100 anos da globo*/
+
+
+.forsao{
+  width: 100px; 
+  height: auto; 
+  margin: 0 5px;
+}/*altera tamanho da imagem e altera margem*/
+
+article{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}/*ajusta posição de alguns itens*/
+
+.esquerda{
+    display: flex;
+    justify-content: left;
+}/*coloca o elemento a esquerda e ajusta tamanho*/
+
+.direita{
+    display: flex;
+    justify-content: right;
+}/*coloca o elemento a direita e ajusta tamanho*/
+
+.opcoes{
+    height: auto;
+    width: 35px;
+    display: flex;
+    justify-content: left;
+}/*coloca o elemento a esquerda e ajusta tamanho*/
+
+.pesquisa{
+    height: auto;
+    width: 35px;
+    display: flex;
+    justify-content: left;
+}/*coloca o elemento a direita e ajusta tamanho*/
+
+iframe{
+  width: 100%; /* O vídeo ocupa a largura total disponível */
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}/*posicionamento e tamanho dos vídeos*/
+
+.video{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+    margin-bottom: 0px;
+    margin-top: 20px;
+    overflow: hidden;
+}/*ajusta posição e tamanho da div vídeo*/
+
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    border: none;
+    margin: 0;
+}/*Posiciona o vídeo "em cima", altera posição dele e tira bordas*/
+
+@media (min-width: 1024px) {
+
+    .bloco-destaque {
+        display: flex; /*deixa disponível para alterar posições*/
+        align-items: flex-start;
+        gap: 20px; /* Espaço entre as duas colunas */
+        max-width: 1200px; /* Largura máxima que o bloco de conteúdo pode ocupar */
+        margin-left: 15rem;
+        padding: 0 20px; /* Garante que não cole nas bordas da tela */
+        margin-right: 30rem;
+        margin-top: 2rem;
+    }
+
+
+    .separador {
+        display: none;
+    }/*separador não é necessário para esta resolução*/
+
+
+    .noticiaprincipal {
+        flex: 0 0 65%; /* 65% da largura, a coluna dominante */
+        margin: 0; /* Remove as margens fixas que impedem o Flexbox de funcionar */
+        position: relative; 
+    }
+
+    .noticiaprincipal footer,
+    .noticiaprincipal p {
+        display: none;
+    }/*algumas vezes no site original do GE não era mostrado todo o texto da notícia, só o texto principal*/
+
+    .noticiaprincipal .titulo_principal {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        color: white;
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+        font-size: 26px;
+    }/*muda características como tamanho, botar texto acima da imagem (z-index), bota a cor branca para texto em cima da imagem para desktop*/
+
+    .noticiaprincipal .imgabaixo img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .noticianeymar {
+        flex: 0 0 59%; /* 59% da largura restante */
+        position: relative; 
+        margin: 0;
+        border-left: none;
+        padding-left: 20px;
+    }/*Muda tamanho e posição da classe noticia neymar*/
+
+    .noticianeymar img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }/*maximisa tamanho e deixa tamanho proporcional*/
+
+    .noticianeymar h3,
+    .noticianeymar p {
+        position: absolute;
+        color: white;
+        width: 95%; 
+        padding: 0 2.5%; 
+        box-sizing: border-box;
+        left: 0;
+    }/*coloca texto por cima da imagem do neymar*/
+
+    .noticianeymar h3 {
+        top: 20px; 
+        font-size: 1.3em; 
+        line-height: 1.2;
+    }/*reduzindo o tamanho por estar na coluna estreita */
+
+    .noticianeymar p {
+        bottom: 5px; 
+        font-size: 0.9em; 
+        font-weight: bold; 
+    }   /*reduzindo o tamanho e aproximando do fundo */
+
+
+    .noticianeymar footer {
+        display: none;
+    }    /*ocultar footers*/
+}
+
+.flu{
+    margin-top: -29rem;
+}
+
+@media (min-width: 1024px) {
+
+    .bloco-lista-destaque {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px; 
+        max-width: 1200px;
+        margin: 40px auto; 
+        padding: 0 20px;
+    }/*serve para todas as notícias para deixar a notícia principal e a notícia secundária em 1 bloco, para deixálas 1 ao lado da outra depois*/
+
+
+    .noticia-objeto {
+        flex: 0 0 60%; /* Ocupa 60% da largura total */
+        display: flex; 
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0;
+        border-bottom: none;
+        margin-left: 0; 
+    }
+
+    /* Flexbox Interno do Deyverson e outros vídeos ou fotos */
+    .noticia-objeto .video {
+        flex: 0 0 50%; 
+        position: relative;
+        padding-top: 25.31%; 
+        overflow: hidden;
+    }
+
+    .noticia-objeto .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }/*altera tamanho, posição e retira borda de qualquer vídeo dentro da classe noticia-objeto*/
+
+    .noticia-objeto .conteudo {
+        flex: 1; 
+        margin-top: 5px; 
+    }/*faz ocupar todo o espaço dentro da flexbox e bota uma pequena margem*/
+    
+    .noticia-objeto .conteudo {
+        font-size: 1.5em; 
+        color: var(--cor-destaque);
+        margin-top: 0;
+        font-weight: bold;
+        line-height: 1.25; 
+        margin-bottom: 6px; 
+    }/*altera tamanhom cor, deixa em negrito tudo em conteudo*/
+    
+    .noticia-objeto .conteudo {
+        font-size: 0.9em; 
+        color: #333;
+        margin-bottom: 8px; 
+    }
+    
+    .noticia-objeto .conteudo {
+        font-size: 0.75em; 
+        color: #666;
+    }
+
+    .noticia-sao-paulo {
+        flex: 0 0 40%; /* Ocupa 40% da largura total */
+        padding-left: 20px; 
+        border-left: 1px solid #ddd; /* Linha de separação */
+        margin-top: 0;
+    }
+
+    /* Estilização do Placar (FOR 0 x 2 SAO) */
+    .noticia-sao-paulo .partida1 {
+        display: flex; 
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 5px; 
+    }
+    
+    .noticia-sao-paulo .forsao {
+        width: auto; 
+        height: 1.5em; 
+        margin: 0 5px;
+    }/*ajustes de tamanho e margem*/
+
+    .noticia-sao-paulo .timeA,
+    .noticia-sao-paulo .timeB {
+        font-weight: bold;
+        color: var(--cor-destaque); 
+        font-size: 1em;
+    }/*altera cor, estilo e tamanho da fonte*/
+
+    .noticia-sao-paulo .titulo-sao-paulo {
+        font-size: 1.3em; 
+        font-weight: bold;
+        color: #333; 
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }/* estilização do título */
+    
+    .noticia-sao-paulo .descricao {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0;
+    }/*altera estilo da descrição*/
+}
+
+@media (min-width: 1024px) {
+
+    .top-bar {
+        display: flex;
+        justify-content: space-between; /*empurra os grupos (esquerda e direita) para os extremos*/
+        align-items: center;
+        background-color: white; 
+        border-bottom: 1px solid #eee;
+        max-width: 1200px; /*alinha com o conteúdo principal*/
+    }
+
+    .linkscabecalho {
+        display: flex;
+        align-items: center;
+        gap: 25px; /* Espaço entre cada link */
+        margin-left: 1rem;
+    }
+
+    .linkscabecalho a {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.5;
+        font-family: Arial, sans-serif;
+    }
+    
+    .imgconta {
+        display: flex;
+        align-items: right;
+    }
+    
+    .conta-globo {
+        display: flex;
+        align-items: right;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 400%;
+    }
+
+ .icone-conta-globo {
+    display: block; /*faz a imagem aparecer apenas no desktop */
+    height: 30px; /*altura do ícone */
+    width: auto;
+    margin-left: 100%;
+ }
+}
+
+@media (min-width: 1024px) {
+
+    .logo-ge {
+        /*garante que o logo fique centralizado no meio do flexbox*/
+        margin: 0 auto; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-ge img {
+        height: 40px; /* Tamanho do logo GE|100 */
+        width: auto;
+    }
+
+    .buscar-container {
+        flex: 1; /*permite que o grupo ocupe espaço */
+        display: flex;
+        justify-content: flex-end; /*alinha o botão BUSCAR à direita extrema */
+    }
+
+    .flu{
+        margin-top: -11rem;
+    }/*altera a posição da imagem do fluminense na versao desktop*/
+
+}
