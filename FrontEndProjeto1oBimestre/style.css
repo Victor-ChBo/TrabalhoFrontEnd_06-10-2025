@@ -137,7 +137,7 @@ div{
     box-shadow: #6c757d;
 }/*adiciona área cinza entre as matérias na versão mobile first*/
 
-.cabecalio{
+.cabecalho{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -267,7 +267,7 @@ iframe{
         height: auto;
     }
     .noticianeymar {
-        flex: 0 0 59%; /* 59% da largura restante */
+        flex: 0 0 58.2%; /* 58.2% da largura restante */
         position: relative; 
         margin: 0;
         border-left: none;
